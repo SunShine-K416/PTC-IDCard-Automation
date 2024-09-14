@@ -73,10 +73,10 @@ Implemented for Perfect Tuition Centre, this project automates ID card generatio
    - Save the script.
    - Click on `Run` to authorize the script with your Google account. Follow the prompts to grant necessary permissions.
 
-5. **Create a Trigger (Optional):**
-   - To automate the process, you can create a time-based trigger.
+5. **Create an On Form Submit Trigger:**
+   - To automatically run the script when a form is submitted, create a trigger.
    - Go to `Triggers` (clock icon) in the Apps Script editor.
-   - Click `+ Add Trigger`, choose `generateIDCards`, and set the desired frequency.
+   - Click `+ Add Trigger`, choose `generateIDCards` from the function dropdown, set the event type to `From form`, and select `On form submit`.
 
 6. **Run the Script:**
-   - Execute the `generateIDCards` function by clicking the `Run` button in the Apps Script editor. This will generate ID cards for the students.
+   - You can manually execute the `generateIDCards` function by clicking the `Run` button in the Apps Script editor to test and ensure everything is working correctly. Once the trigger is set up, the function will automatically generate ID cards whenever a new form submission is received.
